@@ -1,0 +1,8 @@
+<nav>
+  <div class="nav-wrapper navbar__background-color">
+    <a href="#" class="brand-logo navbar__logo-padding">uHealth</a>
+    <div class="col s12 right navbar__breadcrumbs">
+      <a *ngFor="let bc of getThisBread()" (click)="navigate(bc)" class="breadcrumb">{{bc}}</a>
+    </div>
+  </div>
+</nav>
